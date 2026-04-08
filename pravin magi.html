@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Critical System Alert!</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #38bdf8;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            border: 2px solid #38bdf8;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+            max-width: 500px;
+            text-align: center;
+        }
+        h1 { color: #f43f5e; font-size: 24px; }
+        .blink { animation: blinker 1.5s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+        .btn {
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn:hover { background: #f43f5e; color: white; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="blink">⚠️ WARNING: SYSTEM INSTABILITY</h1>
+    <p>> Scanning friendship database...</p>
+    <p>> Detecting user: <strong>[Pallavi]</strong></p>
+    <hr style="border: 0.5px solid #1e293b;">
+    <p style="color: #fbbf24;"><strong>Error 404:</strong> Best Friend Not Found in real life!</p>
+    <p>Status: Extreme boredom detected. Memes ki supply kam ho gayi hai.</p>
+    
+    <div id="secret-msg" style="display:none; margin-top: 20px; color: #10b981;">
+        <h3>The Truth:</h3>
+        <p>Actually,  aapki yaad aa rahi thi. <br> Chalo jaldi vapas aao!</p>
+    </div>
+
+    <button class="btn" onclick="document.getElementById('secret-msg').style.display='block'">
+        Fix This Error
+    </button>
+</div>
